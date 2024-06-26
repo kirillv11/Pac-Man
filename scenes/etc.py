@@ -90,7 +90,6 @@ class MenuScene:
 #  Иначе - game_pause_on = False
 #
 #  К движению NPC, игрока и тд, завязывайтек эту переменную как доп. условие, чтобы при паузе все зависли
-#  Если с чем-то не можете разобраться по этому поводу - пинганите меня в тг (FredTheKing)
 def reset():
     Settings.pink_ghost.reset()
     Settings.blue_ghost.reset()
