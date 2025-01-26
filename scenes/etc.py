@@ -196,7 +196,7 @@ class SettingsScene:
             ),
             "Back to Menu"
         ):
-          set_scene(0)
+            set_scene(0)
         if pyray.gui_button(
             pyray.Rectangle(
                 Settings.width // 2 - Settings.menu_button_width // 2,
@@ -204,9 +204,10 @@ class SettingsScene:
                 (Settings.menu_button_height + 10),
                 Settings.menu_button_width,
                 Settings.menu_button_height
-            ), "Sound turn {}".format(TurnCondition(Settings.sounds_on).show())  # <- bool + recalculable text
+                # <- bool + recalculable text
+            ), "Sound turn {}".format(TurnCondition(Settings.sounds_on).show())
         ):
-          Settings.sounds_on = not Settings.sounds_on
+            Settings.sounds_on = not Settings.sounds_on
 
     def draw(self):
         if debug:

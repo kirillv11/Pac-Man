@@ -22,7 +22,8 @@ class Seed:
 
     def draw(self):
         if not self.dead:
-            pyray.draw_circle(self.cords[0] + 10, self.cords[1] + 10, 3, colors.RAYWHITE)
+            pyray.draw_circle(self.cords[0] + 10,
+                              self.cords[1] + 10, 3, colors.RAYWHITE)
 
 
 class Energizer:
@@ -43,7 +44,8 @@ class Energizer:
 
     def draw(self):
         if not self.dead:
-            pyray.draw_circle(self.cords[0] + 10, self.cords[1] + 10, 5, colors.RAYWHITE)
+            pyray.draw_circle(self.cords[0] + 10,
+                              self.cords[1] + 10, 5, colors.RAYWHITE)
 
 
 class Cherry:
@@ -71,10 +73,10 @@ class Cherry:
                 self.show = False
                 self.last_change = time.time()
 
-
     def draw(self):
         if not self.dead and self.show:
-            pyray.draw_texture(self.texture_cherry, self.x, self.y, pyray.WHITE)
+            pyray.draw_texture(self.texture_cherry,
+                               self.x, self.y, pyray.WHITE)
 
     def die(self):
         self.dead = True

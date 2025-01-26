@@ -5,7 +5,10 @@ from config import Settings
 
 
 class Cell:
-    def __init__(self, cell_type: int, x: int, y: int, width: int = Settings.cell_size, height: int = Settings.cell_size):
+    def __init__(
+            self, cell_type: int, x: int, y: int,
+            width: int = Settings.cell_size,
+            height: int = Settings.cell_size):
         self.cell_type: int = cell_type
         self.width: int = width
         self.height: int = height
